@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+}
+
+html, body {
+    height: 100%;
+}
+
+.center {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.clear {
+    clear: both;
+}
+
+.header {
+    width: 100%;
+    padding: 0 2%;
+    height: 60px;
+    background-color: #212343;
+}
+
+.header img {
+    margin: 19px;
+}
+
+.container-banner {
+    width: 100%;
+    padding: 0 2%;
+    height: 557px;
+    background-image: url('../images/header_bg.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.container-banner > .center {
+    height: 100%;
+}
+
+.form {
+    padding: 20px;
+    position: relative;
+    top: -10px;
+    float: right;
+    width: 400px;
+    height: calc(100%);
+    background-color: white;
+    border: 8px solid rgba(120, 120, 120, .7);
+    background-clip: padding-box;
+}
+
+.form h2 {
+    font-weight: normal;
+    font-size: 21px;
+    color: #999
+}
+
+.input-container {
+    margin-top: 20px;
+}
+
+.input-container span {
+    display: inline-block;
+    width: 100%;
+    color: #bbb;
+    font-size: 17px;
+}
+
+.form p {
+    padding: 20px 0;
+    display: inline-block;
+    width: 100%;
+    color: #bbb;
+    font-size: 17px;
+}
+
+.input-container input[type=text] {
+    padding-left: 12px;
+    width: 344px;
+    height: 55px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+}
+
+.input-container input[type=text]:focus {
+    outline: 0;
+}
+
+.form .input-submit-container {
+    text-align: center;
+}
+
+.form input[type=submit] {
+    cursor: pointer;
+    display: inline-block;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 5px solid #4A5097;
+    font-size: 25px;
+    color: white;
+    width: 280px;
+    height: 56px;
+    background-color: #363A6D;
+}
+
+.form input[type=submit]:hover {
+    transition-duration: 1s;
+    background-color: #323665;
+}
+
+.container-list {
+    padding: 30px;
+    margin-top: 100px; 
+    float: left;
+    width: 519px;
+    height: 270px;
+    background-color: rgba(33, 35, 67, .7);
+}
+
+.container-list ul {
+    list-style-position: inside;
+}
+
+.container-list ul li {
+    margin-top: 18px;
+    color: white;
+}
+
+.container-2 {
+    width: 100%;
+    text-align: center;
+    padding: 40px 2%;
+    background-color: #DDD;
+}
+
+.container-2 h2 {
+    font-weight: normal;
+}
+
+.container-2 p {
+    width: 100%;
+    max-width: 768px;
+    margin: 15px 0;
+    display: inline-block;
+    text-align: justify;
+}
+
+.arrow {
+    position: relative;
+    top: 60px;
+    /* margin: 0 auto; */
+    left: 50%;
+    margin-left: -20px;
+    width: 40px;
+    height: 40px;
+    background-image: url('../images/arrow.png'); 
+    background-size: 100% 100%;
+}
+
+.section-1 {
+    background-color: white;
+    width: 100%;
+    padding: 90px 2%;
+}
+
+.section-1 h2 {
+    text-align: center;
+    color: #462663;
+    font-weight: normal;
+}
+
+.container-section {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.container-single {
+    float: left;
+    width: 33.33%;
+    padding: 30px 15px;
+}
+
+.container-single img {
+    width: 70px;
+}
+
+.container-single p {
+    display: inline-block;
+    text-align: justify;
+    padding: 10px;
+}
+
+.footer {
+    /* clear: both; */
+    text-align: center;
+    padding: 15px 0 25px 0;
+    border-top: 2px solid #888;
+    color: #888;
+}
+
+.footer p {
+    margin-top: 8px;
+}
+
+@media screen and (max-width: 1024px) {
+    .header {
+        text-align: center;
+    }
+
+    .container-banner {
+        height: auto;
+        padding: 40px 2%;
+        text-align: center;
+    }
+
+    .form {
+        float: right;
+        top: 0;
+        width: 60%;
+        max-width: 400px;
+        height: 100%;
+    } 
+
+    .container-list {
+        max-width: 500px;
+        float: left;
+        width: 40%;
+        margin-top: 0px;
+    }
+
+    .input-container input[type=text] {
+        width: 100%;
+        height: 55px;
+    }
+
+    .form input[type=submit] {
+        width: 100%;
+        max-width: 280px;
+        height: 56px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container-2 {
+        padding-left: 4%;
+        padding-right: 4%; 
+    }
+
+    .container-list {
+        width: 100%;
+        float: none;
+        display: inline-block;
+        margin-top: 0;
+    }
+
+    .form {
+        margin-top: 30px;
+        float: none;
+        display: inline-block;
+        width: 80%;
+    }
+
+    .container-single {
+        float: none;
+        display: inline-block;
+        width: 100%;
+        max-width: 600px;
+        padding: 30px 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
